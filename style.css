@@ -60,7 +60,7 @@
     padding: 20px 0;
 }
 
-.operator{
+.operator, .delete{
     background-color: #4169e1;
     color: #fff;
     text-align: center;
