@@ -2,36 +2,178 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
     <div class="calculator">
-
-      <input type="text" id="result" name="calculator" readonly >
+      <div class="display">
+        <input type="text" id="result" name="display" />
+      </div>
 
       <div class="buttons">
-        <botton class="clear cal">C</botton>
-        <botton class="operator cal">/</botton>
-        <botton class="operator cal">*</botton>
-        <botton class="operator cal">-</botton>
-        <botton class="number cal">7</botton>
-        <botton class="number cal">8</botton>
-        <botton class="number cal">9</botton>
-        <botton class="operator cal">+</botton>
-        <botton class="number cal">4</botton>
-        <botton class="number cal">5</botton>
-        <botton class="number cal">6</botton>
-        <botton class="equals cal">=</botton>
-        <botton class="number cal">1</botton>
-        <botton class="number cal">2</botton>
-        <botton class="number cal">3</botton>
-        <botton class="number cal">0</botton>
-        <botton class="decimal cal">.</botton>
+        <button
+          type="button"
+          value="C"
+          onclick="result.value = '' "
+          class="clear cal"
+        >
+          C
+        </button>
+        <button
+          type="button"
+          value="DE"
+          onclick="result.value = result.value.toString().slice(0,-1) "
+          class="operator cal"
+        >
+          DE
+        </button>
+        <button
+          type="button"
+          value="/"
+          onclick="result.value += '/' "
+          class="operator cal"
+        >
+          /
+        </button>
+        <button
+          type="button"
+          value="*"
+          onclick="result.value += '*' "
+          class="operator cal"
+        >
+          *
+        </button>
+        <button
+          type="button"
+          value="7"
+          onclick="result.value += '7' "
+          class="number cal"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          value="8"
+          onclick="result.value += '8' "
+          class="number cal"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          value="9"
+          onclick="result.value += '9' "
+          class="number cal"
+        >
+          9
+        </button>
+        <button
+          type="button"
+          value="-"
+          onclick="result.value += '-' "
+          class="operator cal"
+        >
+          -
+        </button>
+        <button
+          type="button"
+          value="4"
+          onclick="result.value += '4' "
+          class="number cal"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          value="5"
+          onclick="result.value += '5' "
+          class="number cal"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          value="6"
+          onclick="result.value += '6' "
+          class="number cal"
+        >
+          6
+        </button>
+        <button
+          type="button"
+          value="+"
+          onclick="result.value += '+' "
+          class="operator cal"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          value="1"
+          onclick="result.value += '1' "
+          class="number cal"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          value="2"
+          onclick="result.value += '2' "
+          class="number cal"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          value="3"
+          onclick="result.value += '3' "
+          class="number cal"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          value="="
+          onclick="result.value = eval(result.value)"
+          class="equals cal"
+        >
+          =
+        </button>
+        <button
+          type="button"
+          value="00"
+          onclick="result.value += '00' "
+          class="number cal"
+        >
+          00
+        </button>
+        <button
+          type="button"
+          value="0"
+          onclick="result.value += '0' "
+          class="number cal"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          value="."
+          onclick="result.value += '.' "
+          class="decimal cal"
+        >
+          .
+        </button>
       </div>
     </div>
+    <footer>
+      <p>All rights reserved <span>Circle 39</span> © 2023.</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
-const buttonCal = document.querySelectorAll("button");
 
-const inputfield = document.getElementById("result");
+// const buttonCal = document.querySelectorAll("button");
+
+// const inputfield = document.getElementById("result");
