@@ -17,6 +17,6 @@ The AltSchool Circle 39 Calculator Project is a collaborative effort by members 
 - **Backspace**: Deletes the last digits of the current input field.
 
 ## Contributors
-OgheneO'Tega Abraham
-Azumurana Rukewe
-Alex Chuna
+- **OgheneO'Tega Abraham**
+- **Azumurana Rukewe**
+- **Alex Chuna**
